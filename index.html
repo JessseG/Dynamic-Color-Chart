@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Graphs</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        background: lightgray;
+      }
+
+      canvas {
+        border: 1px solid black;
+        margin: 50px 180px;
+        background: whitesmoke;
+        border: 2vh solid blueviolet;
+        border-radius: 1vh;
+      }
+
+      input {
+        width: 500px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        cursor: pointer;
+      }
+
+      .title {
+        display: inline-block;
+        margin: 3vh 0vh;
+        margin-left: 20vh;
+      }
+
+      .slider-div {
+        display: inline-block;
+        margin-left: 10vh;
+      }
+
+      .box {
+        height: auto;
+      }
+
+      h1 {
+        font-size: 45px;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        color:darkblue;
+        letter-spacing: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="title">
+        <h1>Dynamic Color Chart<h1>
+      </div>
+      <div class="slider-div">
+        <input id="slider" type="range" min="1" max="900" value="450"/>
+      </div>
+    </div>
+    <canvas class="canvasClass"></canvas>
+
+    <script type="text/javascript" src="index.js">
+      //   var canvas = document.querySelector('canvas');
+
+      //         canvas.onmouseover = function changeColor() {
+      //             this.style.backgroundColor = 'green';
+      //         }
+    </script>
+  </body>
+</html>
